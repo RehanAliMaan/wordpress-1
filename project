@@ -1,0 +1,31 @@
+1  su rehan
+    2  sudo apt update
+    3  sudo apt install apache2 ghostscript                  libapache2-mod-php                  mysql-server                  php                  php-bcmath                  php-curl                  php-imagick                  php-intl                  php-json                  php-mbstring                  php-mysql                  php-xml                  php-zip
+    4  sudo mkdir -p /srv/www
+    5  sudo chown www-data: /srv/www
+    6  curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www
+    7  /etc/apache2/sites-available/wordpress.conf
+    8  touch /etc/apache2/sites-available/wordpress.conf
+    9  ls /etc/apache2/sites-available/wordpress.conf
+   10  nano /etc/apache2/sites-available/wordpress.conf
+   11  sudo a2ensite wordpress
+   12  sudo a2enmod rewrite
+   13  sudo a2dissite 000-default
+   14  C:\Windows\System32\drivers\etc\hosts)
+   15  \Windows\System32\drivers\etc\hosts
+   16  /etc/hosts
+   17  sudo service apache2 reload
+   18  cd /etc/
+   19  cd /hosts/
+   20  cd /hosts
+   21  sudo mysql -u root
+   22  service mysql start
+   23  sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php
+   24  sudo -u www-data sed -i 's/database_name_here/wordpress/' /srv/www/wordpress/wp-config.php
+   25  sudo -u www-data sed -i 's/username_here/wordpress/' /srv/www/wordpress/wp-config.php
+   26  sudo -u www-data sed -i 's/password_here/<123>/' /srv/www/wordpress/wp-config.php
+   27  sudo -u www-data nano /srv/www/wordpress/wp-config.php
+   28  cd ..
+   29  sudo -u www-data nano /srv/www/wordpress/wp-config.php
+   30  history 
+
